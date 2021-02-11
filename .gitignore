@@ -127,8 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-/.idea/HackerRank.iml
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/inspectionProfiles/profiles_settings.xml
-/.idea/vcs.xml
+
+# Jetbrains
+.idea/
