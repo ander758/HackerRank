@@ -2,7 +2,7 @@
 from random import randrange
 
 """
-print count of highest occuring item in list
+print count of highest occurring item in list
 
 input
 candles = [4,4,1,3]
@@ -15,7 +15,6 @@ hackerrank.com/challenges/birthday-cake-candles/
 
 def birthdayCakeCandles(candles):
     candles.sort()
-    print(candles)
 
     dct = {}
     for n in candles:
@@ -36,5 +35,4 @@ if __name__ == '__main__':
     for i in range(0, randrange(5, 10, 1)):
         arr.append(randrange(1, 10, 1))
 
-    # arr = [4, 4, 1, 3]
     print(birthdayCakeCandles(arr))
