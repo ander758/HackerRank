@@ -1,16 +1,18 @@
+from ClassMarkdownBuilder import MarkdownBuilder
 import datetime
-import selenium_utils
-from functions import *
+import selenium_crawler
+from utils import *
 
 __author__ = "Anders Rubach Ese"
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 __email__ = "anders.rubach.ese@hotmail.com"
 
-chrome_driver = selenium_utils.ChromeDriver()
 
-f = open("../README.md", "w")
-f.write('# HackerRank\n\n')
-f.write('My HackerRank solutions [@hackerrank.com/Anders_Ese](https://www.hackerrank.com/Anders_Ese)\n')
+chrome_driver = selenium_crawler.ChromeDriver()
+builder = MarkdownBuilder()
+builder.add_img(img_url='https://user-images.githubusercontent.com/1194257/65596422-1cef2080-df97-11e9-9abb-a225204d1805.png', name='HackerRank Logo')
+builder.add_heading('HackerRank')
+builder.append_line('My HackerRank solutions [@hackerrank.com/Anders_Ese](https://www.hackerrank.com/Anders_Ese)')
 
 subject_dict = {
     # '<language>': ['extension'] + sub paths
@@ -18,27 +20,24 @@ subject_dict = {
     'algorithms': [''] + ([i for i in os.walk('../algorithms')][0][1])
 }
 
-for key in subject_dict:
-    f.write(f' - {key.title()}\n')
-    for sub_path in subject_dict.get(key)[1:]:
-        label = sub_path
-        count_my_sols = count_files_in_dir(f'../{key}/{sub_path}')
 
+for key in subject_dict:
+    elements = []
+    for sub_path in subject_dict.get(key)[1:]:
+        n_in_path = count_files_in_dir(f'../{key}/{sub_path}')
         url = f'https://www.hackerrank.com/domains/{key}?'
         query = url_query_builder({'filters[subdomains][]': subject_dict.get(key)[0] + sub_path.replace(' ', '-')})
-        num_of_challenges_on_HackerRank = chrome_driver.count_string_occurrence_in_html_source(url + query,
-                                                                                               'js-track-click challenge-list-item')
-        print(url + query)
-        message = f'{count_my_sols}/{num_of_challenges_on_HackerRank}'
-        color = get_color_by_percentage(count_my_sols, num_of_challenges_on_HackerRank)
-        print(f'q={url}{query}')
-        print(f'label={label}')
-        print(f'message={message}')
-        print(f'color={color}')
-        f.write(f'	 - [![{sub_path}]({get_badge(label, message, color)})](/{key}/{sub_path})\n')
+        n_on_website = chrome_driver.count_str_occ_in_src(url + query, 'js-track-click challenge-list-item', seconds_to_scroll=5)
+        print(f' -> \'{key}/{sub_path}\': Found {n_in_path} in path and {n_on_website} on website')
+        elements.append(builder.get_solution_badge(
+            label=sub_path, n_in_path=n_in_path, n_on_website=n_on_website, url_pointer=f'/{key}/{sub_path}'))
 
-f.write(f'\n<br /><br />README.me built @{datetime.date.today()} from `/readme_builder/builder.py`')
-f.close()
+    builder.add_drop_down(title=key.title(), str_list=elements)
+
+builder.add_break_line()
+builder.add_break_line()
+builder.append_line(f'README.me built @{datetime.date.today()} from `/readme_builder/builder.py`')
+builder.write_content_to_file(path='../', file_name='README.md')
 chrome_driver.close()
 
 """
