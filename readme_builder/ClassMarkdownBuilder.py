@@ -58,7 +58,7 @@ class MarkdownBuilder:
 
     def get_solution_badge(self, label, n_in_path, n_on_website, url_pointer):
         message = f'{n_in_path}/{n_on_website}'
-        color_hex = hex_color_by_pct(n_on_website, n_on_website)
+        color_hex = hex_color_by_pct(n_in_path, n_on_website)
         return f'[![{label}]({get_badge(label, message, color_hex)})]({url_pointer})'
 
     def add_break_line(self):
