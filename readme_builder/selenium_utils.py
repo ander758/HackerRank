@@ -1,3 +1,4 @@
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -26,9 +27,24 @@ class ChromeDriver:
     def count_string_occurrence_in_html_source(self, url, string, get_source_after_js_onload=True):
         """
         Returns occurrence of a string in entire HTML source of an url
+        :param n: n seconds to scroll down to fetch all data
         :param get_source_after_js_onload: True returns html source after JavaScript is loaded.
                                             May give bad source if set to False"""
         self.webdriver_chrome.get(url)
+
+        last_height = self.webdriver_chrome.execute_script("return document.body.scrollHeight")
+        while True:
+            # https://stackoverflow.com/questions/48850974/selenium-scroll-to-end-of-page-in-dynamically-loading-webpage
+            # Scroll down to the bottom.
+            self.webdriver_chrome.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            # Wait to load the page.
+            time.sleep(4)
+            # Calculate new scroll height and compare with last scroll height.
+            new_height = self.webdriver_chrome.execute_script("return document.body.scrollHeight")
+            if new_height == last_height:
+                break
+            last_height = new_height
+
         if get_source_after_js_onload:
             html_source = self.webdriver_chrome.execute_script('return document.documentElement.innerHTML;')
         else:
