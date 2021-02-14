@@ -1,8 +1,8 @@
-#!/bin/python3
-from random import randrange, randint
+from random import randint
 
 """
 www.hackerrank.com/challenges/simple-array-sum
+github.com/ander758/HackerRank
 """
 
 
@@ -11,6 +11,7 @@ def simpleArraySum(arr):
     for n in arr:
         sum += n
     return sum
+
 
 if __name__ == '__main__':
     arr = []

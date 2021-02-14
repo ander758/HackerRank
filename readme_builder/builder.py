@@ -6,7 +6,7 @@ from utils import *
 __author__ = "Anders Rubach Ese"
 __version__ = "1.1.0"
 __email__ = "anders.rubach.ese@hotmail.com"
-
+# TODO: Implement opening n windows where all scroll at once using n available CPU threads. Or ALL windows at once if possible
 
 chrome_driver = selenium_crawler.ChromeDriver()
 builder = MarkdownBuilder()
@@ -17,7 +17,8 @@ builder.append_line('My HackerRank solutions [@hackerrank.com/Anders_Ese](https:
 subject_dict = {
     # '<language>': ['extension'] + sub paths
     'python': ['py-'] + ([i for i in os.walk('../python')][0][1]),
-    'algorithms': [''] + ([i for i in os.walk('../algorithms')][0][1])
+    'algorithms': [''] + ([i for i in os.walk('../algorithms')][0][1]),
+    'sql': [''] + ([i for i in os.walk('../sql')][0][1]),
 }
 
 

@@ -1,5 +1,7 @@
 """
 www.hackerrank.com/challenges/find-a-string
+github.com/ander758/HackerRank
+
 Count occurrences of substrings in a string
 """
 

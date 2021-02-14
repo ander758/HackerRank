@@ -1,5 +1,7 @@
 """
 www.hackerrank.com/challenges/zipped/
+github.com/ander758/HackerRank
+
 Get average of each scores from every person using zip
 """
 

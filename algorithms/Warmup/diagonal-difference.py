@@ -1,5 +1,6 @@
 """
 www.hackerrank.com/challenges/diagonal-difference
+github.com/ander758/HackerRank
 
 print absolute diagonal difference in matrix-array
 """

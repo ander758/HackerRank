@@ -1,8 +1,10 @@
-#!/bin/python3
 
 from random import randrange
 
 """
+www.hackerrank.com/challenges/staircase
+github.com/ander758/HackerRank
+
 Sample Input
 6 
 Sample Output

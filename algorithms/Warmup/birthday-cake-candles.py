@@ -2,14 +2,8 @@
 from random import randrange
 
 """
-print count of highest occurring item in list
-
-input
-candles = [4,4,1,3]
-output
-2
-
 hackerrank.com/challenges/birthday-cake-candles/
+github.com/ander758/HackerRank
 """
 
 

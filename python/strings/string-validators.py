@@ -1,5 +1,7 @@
 """
 www.hackerrank.com/challenges/string-validators
+github.com/ander758/HackerRank
+
 Check if string contains:
 alphanumeric characters,
 alphabetical characters,

@@ -1,8 +1,9 @@
-#!/bin/python3
-
 from random import randrange
 
 """
+www.hackerrank.com/challenges/mini-max-sum
+github.com/ander758/HackerRank
+
 Example
 arr=[1,3,5,7,9]
 --> minSum = 1+3+5+7=16
@@ -11,12 +12,13 @@ Output:
 16 24
 """
 
+
 # Complete the miniMaxSum function below.
 def miniMaxSum(arr):
     arr.sort()
 
     lower = 0
-    for i in range(0, len(arr)-1):
+    for i in range(0, len(arr) - 1):
         lower += arr[i]
 
     higher = 0
@@ -24,7 +26,6 @@ def miniMaxSum(arr):
         higher += arr[i]
 
     print(f'{lower} {higher}')
-
 
 
 if __name__ == '__main__':

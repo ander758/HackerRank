@@ -1,5 +1,7 @@
 """
 hackerrank.com/challenges/python-loops
+github.com/ander758/HackerRank
+
 """
 
 n = 5

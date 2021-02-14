@@ -2,6 +2,7 @@ from random import randrange
 
 """
 www.hackerrank.com/challenges/python-string-formatting/
+github.com/ander758/HackerRank
 """
 
 

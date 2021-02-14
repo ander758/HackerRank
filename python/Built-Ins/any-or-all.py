@@ -1,5 +1,7 @@
 """
 www.hackerrank.com/challenges/any-or-all
+github.com/ander758/HackerRank
+
 Check if all are positive and if any int is palindrome
 """
 

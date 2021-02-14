@@ -1,6 +1,6 @@
-#!/bin/python3
 """
 https://www.hackerrank.com/challenges/compare-the-triplets
+github.com/ander758/HackerRank
 """
 
 

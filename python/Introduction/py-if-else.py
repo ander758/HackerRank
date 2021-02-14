@@ -2,6 +2,8 @@ from random import randrange
 
 """
 hackerrank.com/challenges/python-arithmetic-operators
+github.com/ander758/HackerRank
+
 If  is odd, print Weird
 If  is even and in the inclusive range of  to , print Not Weird
 If  is even and in the inclusive range of  to , print Weird

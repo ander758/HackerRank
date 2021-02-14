@@ -1,6 +1,7 @@
-# !/bin/python3
 """
 www.hackerrank.com/challenges/input
+github.com/ander758/HackerRank
+
 You are given a polynomial P of a single indeterminate (or variable) x.
 You are also given the values of x and k. Your task is to verify if P(x)=k
 

@@ -1,5 +1,7 @@
 """
 www.hackerrank.com/challenges/text-wrap/
+github.com/ander758/HackerRank
+
 sample input: 4 ABCDEFGHIJKLIMNOQRSTUVWXYZ
 output:
 EFGH

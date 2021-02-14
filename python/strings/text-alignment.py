@@ -1,5 +1,6 @@
 """
 www.hackerrank.com/challenges/text-alignment
+github.com/ander758/HackerRank
 """
 
 thickness = 5

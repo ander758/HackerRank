@@ -1,6 +1,6 @@
-#!/bin/python3
 """
 www.hackerrank.com/challenges/grading
+github.com/ander758/HackerRank
 """
 
 

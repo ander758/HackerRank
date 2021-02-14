@@ -1,6 +1,7 @@
-# !/bin/python3
 """
 www.hackerrank.com/challenges/python-sort-sort/
+github.com/ander758/HackerRank
+
 """
 
 

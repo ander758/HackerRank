@@ -4,6 +4,8 @@ import string
 
 """
 www.hackerrank.com/challenges/alphabet-rangoli/
+github.com/ander758/HackerRank
+
 """
 
 

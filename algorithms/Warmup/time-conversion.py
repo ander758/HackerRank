@@ -1,9 +1,9 @@
-#!/bin/python3
-
-
 from random import randrange
 
 """
+www.hackerrank.com/challenges/time-conversion
+github.com/ander758/HackerRank
+
 Convert AM/PM to 24hr format
 
 input= '12:01:00PM' -> output= 12:01:00

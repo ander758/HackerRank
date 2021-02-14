@@ -1,6 +1,7 @@
-#!/bin/python3
 """
-www.hackerrank.com/challenges
+www.hackerrank.com/challenges/plus-minus
+github.com/ander758/HackerRank
+
 Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero.
 """
 

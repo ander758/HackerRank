@@ -1,5 +1,6 @@
 """
 www.hackerrank.com/challenges/ginorts/
+github.com/ander758/HackerRank
 
 You are given a string str_in
 str_in contains alphanumeric characters only.

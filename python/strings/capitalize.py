@@ -1,6 +1,7 @@
-#!/bin/python3
 """
 www.hackerrank.com/challenges/capitalize
+github.com/ander758/HackerRank
+
 """
 
 

@@ -1,11 +1,7 @@
-#!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
+"""
+hackerrank.com/challenges/fair-rations
+github.com/ander758/HackerRank
+"""
 
 # Complete the fairRations function below.
 def fairRations(n, arr):

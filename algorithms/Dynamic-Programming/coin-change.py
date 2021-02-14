@@ -1,7 +1,7 @@
-#!/bin/python3
 """
 TODO: Complete this
 https://www.hackerrank.com/challenges/coin-change
+github.com/ander758/HackerRank
 """
 
 
