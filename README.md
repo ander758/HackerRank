@@ -6,7 +6,7 @@ My HackerRank solutions [@hackerrank.com/Anders_Ese](https://www.hackerrank.com/
 	 - [![Introduction](https://img.shields.io/static/v1?label=Introduction&message=7%2F7&color=00FF00)](/python/Introduction)
 	 - [![strings](https://img.shields.io/static/v1?label=strings&message=12%2F14&color=FFFF00)](/python/strings)
  - Algorithms
-	 - [![Dynamic Programming](https://img.shields.io/static/v1?label=Dynamic+Programming&message=1%2F20&color=FF0000)](/algorithms/Dynamic Programming)
+	 - [![Dynamic-Programming](https://img.shields.io/static/v1?label=Dynamic-Programming&message=1%2F20&color=FF0000)](/algorithms/Dynamic-Programming)
 	 - [![Implementation](https://img.shields.io/static/v1?label=Implementation&message=1%2F20&color=FF0000)](/algorithms/Implementation)
 	 - [![Warmup](https://img.shields.io/static/v1?label=Warmup&message=10%2F10&color=00FF00)](/algorithms/Warmup)
 
