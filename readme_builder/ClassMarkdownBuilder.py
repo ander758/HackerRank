@@ -63,3 +63,7 @@ class MarkdownBuilder:
 
     def add_break_line(self):
         self.append_line('<br>')
+
+    def replace_str_in_curr_content(self, str_old, str_new):
+        new = self.file_content.replace(str(str_old), str(str_new))
+        self.file_content = new

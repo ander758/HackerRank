@@ -21,3 +21,4 @@ SET @d = (SELECT MAX(LONG_W) FROM STATION);
 
 SELECT ROUND(@a-@c + @b-@d, 4) FROM STATION;
 */
+

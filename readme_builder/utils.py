@@ -16,9 +16,13 @@ def url_query_builder(query_dictionary):
     return str_out[1:]
 
 
-def count_files_in_dir(path_to_folder):
+def count_files_in_dir(path_to_folder, extension_exclude_arr=None):
     count = 0
     for element in os.listdir(path_to_folder):
         if not os.path.isfile(element):
-            count += 1
+            if extension_exclude_arr is None:
+                count += 1
+            else:
+                if not element.endswith(tuple(extension_exclude_arr)):
+                    count += 1
     return count
