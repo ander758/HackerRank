@@ -1,0 +1,5 @@
+{
+    "domain": "sql",
+    "query": "select",
+    "extension": ".sql"
+}

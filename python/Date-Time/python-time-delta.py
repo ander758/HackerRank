@@ -13,12 +13,12 @@ from time import strptime
 
 
 # Complete the time_delta function below.
-def get_datetime(str):
+def get_datetime(str_in):
     """
-    :param str:E.g. 'Sun 10 May 2015 13:54:36 -0700'
+    :param str_in:E.g. 'Sun 10 May 2015 13:54:36 -0700'
     :return: datetime object with timezone
     """
-    ls = str.split(' ')
+    ls = str_in.split(' ')
     dd, mm, yy = ls[1], strptime(ls[2], '%b').tm_mon, ls[3]
     HH, MM, SS = ls[4][:2], ls[4][3:5], ls[4][6:9]
     tz_sign, tz_hours, tz_minutes = re.match('([+\-]?)(\d{2})(\d{2})', ls[5]).groups()
@@ -29,7 +29,7 @@ def get_datetime(str):
 
 
 def time_delta(t1, t2):
-    return round((get_datetime(t1) - get_datetime(t2)).total_seconds())
+    return round(abs((get_datetime(t1) - get_datetime(t2)).total_seconds()))
     # first = datetime.datetime.strptime(t1, '%a %d %b %Y %H:%M:%S %z')
     # second = datetime.datetime.strptime(t2, '%a %d %b %Y %H:%M:%S %z')
     # return str(abs(int((first - second).total_seconds())))

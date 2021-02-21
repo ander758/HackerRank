@@ -27,11 +27,13 @@ class ChromeDriver:
 
     def count_str_occ_in_src(self, url, string, src_after_js_onload=True, seconds_to_scroll=5):
         """
-        Returns occurrence of a string in entire HTML source of an url
-        :param seconds_to_scroll: n seconds to scroll down to fetch all data
+
+        :param url: Url to crawl
+        :param string:  String to search for
         :param src_after_js_onload: True returns html source after JavaScript is loaded.
                                             May give bad source if set to False
-        :param seconds_to_scroll: Number of seconds to scroll down to force dynamic websites
+        :param seconds_to_scroll: N seconds to scroll and wait to force-load dynamic websites
+        :return: n occurrences
         """
         self.webdriver_chrome.get(url)
 
