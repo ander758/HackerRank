@@ -1,6 +1,6 @@
 ![HackerRank Logo](https://user-images.githubusercontent.com/1194257/65596422-1cef2080-df97-11e9-9abb-a225204d1805.png)
 # HackerRank
-My HackerRank solutions [@hackerrank.com/Anders_Ese](https://www.hackerrank.com/Anders_Ese).
+My HackerRank solutions [@hackerrank.com/Anders_Ese](https://www.hackerrank.com/Anders_Ese). This file is updated using Selenium in Python
 - Algorithms
 	 - [![Dynamic-Programming](https://img.shields.io/static/v1?label=Dynamic-Programming&message=1%2F99&color=FF0000)](../algorithms/Dynamic-Programming)
 	 - [![Implementation](https://img.shields.io/static/v1?label=Implementation&message=2%2F66&color=FF0000)](../algorithms/Implementation)
